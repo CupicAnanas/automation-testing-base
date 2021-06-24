@@ -1,0 +1,59 @@
+plugins {
+    id 'java'
+}
+
+group 'ananas.com'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext{
+    jupiterVersion = '5.7.0'
+    gsonVersion = '2.8.6'
+    cucumberVersion = '6.9.1'
+    seleniumVersion = '4.0.0-beta-4'
+    webdrivermanagerVersion = '4.2.2'
+    restAssuredVersion = '4.3.3'
+    gherkinVersion = '16.0.0'
+    slf4jVersion = '1.7.30'
+    assertJVersion = '3.19.0'
+}
+
+dependencies {
+    // jupiter
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$jupiterVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jupiterVersion"
+
+    // gson
+    implementation "com.google.code.gson:gson:$gsonVersion"
+
+    // slf4j
+    implementation "org.slf4j:slf4j-simple:$slf4jVersion"
+    implementation "org.assertj:assertj-core:$assertJVersion"
+
+    // cucumber
+    implementation "io.cucumber:cucumber-core:$cucumberVersion"
+    implementation "io.cucumber:cucumber-java:$cucumberVersion"
+    implementation "io.cucumber:cucumber-jvm:$cucumberVersion"
+    implementation "io.cucumber:cucumber-junit:$cucumberVersion"
+
+    // gherkin
+    testImplementation "io.cucumber:gherkin:$gherkinVersion"
+
+    // selenium
+    implementation "org.seleniumhq.selenium:selenium-java:$seleniumVersion"
+    implementation "io.github.bonigarcia:webdrivermanager:$webdrivermanagerVersion"
+
+    // rest assured
+    implementation "io.rest-assured:rest-assured:$restAssuredVersion"
+
+    // assertions with assertJ
+    implementation "org.assertj:assertj-core:$assertJVersion"
+
+}
+
+test {
+    useJUnitPlatform()
+}
