@@ -30,3 +30,6 @@ Test automation framework will be used mostly for UI E2E tests.
 
 # How to run tests
 * By JUnit runner - just run class JUnitRunner.java in runners package.
+
+# .gitignore
+* If you want to update .gitignore file run this command in terminal after you've made changes in the file: `git rm -r --cached .`. After that you can `git add .` and then `git commit -m "message"`
