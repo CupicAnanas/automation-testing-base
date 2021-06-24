@@ -6,8 +6,8 @@
 # Prerequisites
 * Gradle 6.8
 * Java SE Development Kit 11
-* Setup Allure on local machine if you want to generate reports
 * IntelliJ IDEA - with Cucumber plugins (in Settings/Build, Execution, Deployment/Build Tools/Gradle set Run Tests using: IntelliJ IDEA JVM 11)
+* Setup Allure on local machine if you want to generate reports
 
 # Dependencies
 * For running tests - JUnit Runner `jupiterVersion = '5.7.0'`
