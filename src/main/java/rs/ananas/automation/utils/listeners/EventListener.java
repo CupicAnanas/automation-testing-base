@@ -1,5 +1,6 @@
 package rs.ananas.automation.utils.listeners;
 
+// Event listener class, used for storing reports, screenshot, etc. methods
 public class EventListener {
-    // event listener class for taking screenshots on taist failure, success etc...
+
 }

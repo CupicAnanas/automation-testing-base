@@ -15,15 +15,21 @@ import java.util.Objects;
 
 import rs.ananas.automation.utils.AccessProperties;
 
+// Base driver class, WebDriver calls and methods
 public class BaseDriverClass {
 
+//  Initializing WebDriver from Selenium
     private static WebDriver webDriver;
+//  Initializing AccessProperties class to be used later by the setUp() method
     private static final AccessProperties accessProperties = new AccessProperties();
 
+//  Executes setUp() before each scenario
+//  Checks what value was passed to currentDriver and sets up the WebDriver accordingly
     @Before
     public static void setUp() {
         String currentDriver = null;
         try {
+//          Value of "browser" is in src/test/resources/test.properties
             currentDriver = accessProperties.getProperty("browser");
         } catch (IOException exception) {
             System.out.println(exception.getMessage());
@@ -52,6 +58,8 @@ public class BaseDriverClass {
         return webDriver;
     }
 
+//  Executes tearDown() after each scenario
+//  Exits and tears down the WebDriver
     @After
     public static void tearDown() {
         webDriver.quit();

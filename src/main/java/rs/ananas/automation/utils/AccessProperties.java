@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+// Used for accessing and initializing test.properties file
 public class AccessProperties {
 
     private static final Properties properties = new Properties();
@@ -15,9 +16,10 @@ public class AccessProperties {
         String property = properties.getProperty(propertyName);
         if(property != null){
             return property;
-        }else{
+        } else {
             System.out.println("Property you are trying to access is null!");
             return "";
         }
     }
+
 }
