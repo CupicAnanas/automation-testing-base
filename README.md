@@ -33,4 +33,4 @@ Test automation framework will be used mostly for UI E2E tests.
 
 # .gitignore
 * If you want to update .gitignore file run this command in terminal after you've made changes in the file: `git rm -r --cached .`
-* After the cache is cleaned you can `git add .` and then `git commit -m "message"`
+* After the cache is cleaned you can `git add .` and then `git commit -m "message"` and git should ignore files and folders that you've specified
