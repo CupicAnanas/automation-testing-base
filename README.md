@@ -2,7 +2,7 @@
 Test automation framework will be used mostly for UI E2E tests.
 
 # Prerequisites
-* gradle 6.8
+* gradle 6.8 you can either install it locally or you can use it via dependency
 * Open JDK 11
 * Setup Allure on local machine if you want to generate report
 * IntelliJ IDEA - with Cucumber plugins (in Settings/Build, Execution, Deployment/Build Tools/Gradle set Run Tests using: IntelliJ IDEA JVM 11)
